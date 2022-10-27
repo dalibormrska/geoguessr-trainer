@@ -1,26 +1,16 @@
 <template lang="pug">
 div
   AppHeader
-  h1 Geoguessr Trainer
-  h2 Tool for practicing your metas
-
-  ul.set-types 
-    li.set
-      svg.icon
-      a(href="/") Licence Plates
-
+  h1 About 
+  p Memorization trainer for Geoguessr
   AppFooter
-  
 </template>
 
 <script>
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'Trainer',
+export default {
   head() {
     return {
-      title: 'Geoguessr Trainer',
+      title: 'About The App',
       meta: [
         {
           hid: 'description',
@@ -30,5 +20,7 @@ export default Vue.extend({
       ],
     }
   },
-})
+}
 </script>
+
+<style></style>
