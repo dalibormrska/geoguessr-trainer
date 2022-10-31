@@ -1,13 +1,17 @@
 <template lang="pug">
 div
   AppHeader
-  h1 Geoguessr Trainer
-  h2 Tool for practicing your metas
+  div.grid.grid-cols-12.grid-gap-8
+    AppAside.col-span-3.sticky
+    #content.container.mx-auto.pr-4.col-span-9
+      section.pt-20  
+        h1.text-8xl Geoguessr Trainer
+        h2.text-2xl Tool for practicing your metas
 
-  ul.set-types 
-    li.set
-      svg.icon
-      a(href="/") Licence Plates
+        ul
+          li
+            svg.icon
+            a(href="/") Licence Plates
 
   AppFooter
   

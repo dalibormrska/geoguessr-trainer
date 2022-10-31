@@ -1,11 +1,14 @@
 <template lang="pug">
 div
-  h1.title Geoguessr Trainer
-  nav.navigation
-    ul.nav-bar 
-      li.nav-item
-        NuxtLink(to='/') Trainer
-        NuxtLink(to='/about') About
+  nav.py-8.bg-white.boder.shadow
+    .container.mx-auto.px-4.flex.justify-between
+      .img
+        img(src="../static/Logo.png")
+      ul.flex.justify-end.text-xl.gap-8
+        li.nav-item
+          NuxtLink(to='/') Trainer
+        li.nav-item
+          NuxtLink(to='/about') About
     
 </template>
 

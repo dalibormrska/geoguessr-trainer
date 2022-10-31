@@ -1,5 +1,5 @@
 <template lang="pug">
-div 
+.container.mx-auto.p-4
   p Copyright Dalibor Mrska
 </template>
 

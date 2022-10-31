@@ -1,8 +1,10 @@
 <template lang="pug">
 div
   AppHeader
-  h1 About 
-  p Memorization trainer for Geoguessr
+  #content.container.mx-auto.px-4
+    h1.text-4xl About 
+    .section
+      h2 Memorization trainer for Geoguessr
   AppFooter
 </template>
 
