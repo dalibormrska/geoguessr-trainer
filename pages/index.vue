@@ -1,38 +1,17 @@
-<template lang="pug">
-div
-  AppHeader
-  div.grid.grid-cols-12.grid-gap-8
-    AppAside.col-span-3.sticky
-    #content.container.mx-auto.pr-4.col-span-9
-      section.pt-20  
-        h1.text-8xl Geoguessr Trainer
-        h2.text-2xl Tool for practicing your metas
+<template>
+  <LayoutNav />
 
-        ul
-          li
-            svg.icon
-            a(href="/") Licence Plates
+  <CompHeader />
 
-  AppFooter
-  
+  <main>
+    <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+      <!-- Replace with your content -->
+      <div class="px-4 py-6 sm:px-0">
+        <div class="h-96 rounded-lg border-4 border-dashed border-gray-200" />
+      </div>
+      <!-- /End replace -->
+    </div>
+  </main>
+
+  <LayoutFooter />
 </template>
-
-<script>
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'Trainer',
-  head() {
-    return {
-      title: 'Geoguessr Trainer',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Best place to practice Geoguessr',
-        },
-      ],
-    }
-  },
-})
-</script>
